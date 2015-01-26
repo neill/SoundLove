@@ -2,6 +2,7 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
 
+  config.secret_key = ENV['DEVISE_SECRET_KEY']
   config.omniauth :soundcloud, ENV['SOUNDCLOUD_CLIENT_ID'], ENV['SOUNDCLOUD_SECRET']
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
