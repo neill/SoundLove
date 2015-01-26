@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150126082318) do
+ActiveRecord::Schema.define(version: 20150126094021) do
 
   create_table "identities", force: true do |t|
     t.integer  "user_id"
@@ -22,6 +22,11 @@ ActiveRecord::Schema.define(version: 20150126082318) do
   end
 
   add_index "identities", ["user_id"], name: "index_identities_on_user_id"
+
+  create_table "sounds", force: true do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -39,6 +44,7 @@ ActiveRecord::Schema.define(version: 20150126082318) do
     t.string   "name"
     t.string   "provider"
     t.string   "uid"
+    t.string   "token"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

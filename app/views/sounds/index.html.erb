@@ -1,3 +1,9 @@
-Hi there <%= @user.name %>.
+<% if user_signed_in? %>
+    <p>Hi there <%= @user.name %>.</p>
+    <p>Does this work? <%= @user.email %></p>
+    <p>User token: <%= @user.token %></p>
 
-<%= link_to "Log out.", destroy_user_session_path %>
+    <p><%= link_to "Log out.", destroy_user_session_path %></p>
+<% else %>
+    <%= link_to "Login with Soundcloud!", user_omniauth_authorize_path(provider: :soundcloud) %>
+<% end %>
