@@ -1,6 +1,6 @@
 # SoundLove
-SoundLove is Tinder for Soundcloud. Log in with your Soundcloud account, random SoundCloud sounds will begin to play,
- and you can like or pass on a song. Like a song, and it will add it to your latest playlist. Pass on it, and it's "Gone with the Wind."
+SoundLove is Tinder for Soundcloud. Log in with your Soundcloud account, random (Like, seriously random... And weird.) SoundCloud sounds will begin to play,
+ and you can like or pass on a song. Like a song, and it will add it to your SoundLove playlist. Pass on it, and it's "Gone with the Wind."
 
 Gems being used: Soundcloud, Devise, Omniauth, Omniauth-soundcloud
 
