@@ -1,6 +1,6 @@
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
-    def soundcloud_oauth2
-        @user = User.find_for_soundcloud_oauth2(request.env["omniauth.auth"], current_user)
+    def soundcloud
+        @user = User.find_for_soundcloud(request.env["omniauth.auth"], current_user)
 
         if @user.persisted?
           sign_in_and_redirect @user, event: :authentication
