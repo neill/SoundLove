@@ -1,4 +1,6 @@
 class SoundsController < ApplicationController
+    before_action :authenticate_user!, only: :index
+
     def variables
         @user = current_user
         @client = Soundcloud.new(access_token: current_user.token)
