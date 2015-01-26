@@ -82,6 +82,12 @@ body {
     -webkit-appearance: none;
 }
 
+.button_to {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
 .logout {
     width:100%;
     height:30px;
