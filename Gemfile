@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-soundcloud'
+gem 'arel', '6.0.0.beta2' # This bug is getting annoying.
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.beta2'
 # Use sqlite3 as the database for Active Record
