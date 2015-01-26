@@ -14,10 +14,72 @@
  *= require_self
  */
 
+body {
+    background: #ff6600; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #ff6600 0%, #ff3a00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff6600), color-stop(100%,#ff3a00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #ff6600 0%,#ff3a00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #ff6600 0%,#ff3a00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #ff6600 0%,#ff3a00 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #ff6600 0%,#ff3a00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6600', endColorstr='#ff3a00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.wrap{
+    text-align: center;
+    max-width: 600px;
+    max-height: 600px;
+    width: 100%;
+    line-height: 2;
+    padding: 10px;
+    border: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
 .player {
-    width: 450px;
-    margin: auto;
-    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+}
+
+.passbtn {
+    background: #e31e1e;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 3px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 11pt;
+    -webkit-appearance: none;
+}
+
+.likebtn {
+    background: #43C56E;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 3px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 11pt;
+    -webkit-appearance: none;
 }
 
 .logout {
