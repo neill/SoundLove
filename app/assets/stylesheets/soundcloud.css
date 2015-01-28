@@ -14,7 +14,8 @@ audio:not([controls]) {
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%}
+    -ms-text-size-adjust: 100%
+}
 body {
     margin: 0;
     padding: 0;
@@ -51,9 +52,11 @@ pre {
     word-wrap: break-word;
 }
 q {
-    quotes: "\201C" "\201D" "\2018" "\2019"}
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
 small {
-    font-size: 80%}
+    font-size: 80%
+}
 sub, sup {
     font-size: 75%;
     line-height: 0;
@@ -254,7 +257,6 @@ input[type="checkbox"], input[type="radio"] {
     -ms-hyphens: auto;
     hyphens: auto;
 }
-
 .sc-input {
     display: inline-block;
     font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
@@ -279,7 +281,6 @@ input[type="checkbox"], input[type="radio"] {
     padding: 7px 8px;
     border-radius: 5px;
 }
-
 a, a:visited {
     color: #38d;
     text-decoration: none;
@@ -329,7 +330,7 @@ ul {
 }
 ol {
     list-style: decimal;
-]
+}
 .sc-media, .sc-media-content, .sc-media-body {
     overflow: hidden;
 }
@@ -560,7 +561,8 @@ hr {
     height: 1px;
     margin: 18px 0 17px 0;
     border: none;
-    width: 100%}
+    width: 100%;
+}
 b, strong {
     font-weight: 400;
 }
@@ -691,43 +693,4 @@ h3>.sc-type-light, .sc-type-h3>.sc-type-light {
 .l-inner-fullwidth {
     margin-left: -30px;
     margin-right: -30px;
-}
-@media (max-width:1239px) {
-    .l-container {
-    width: 1020px;
-}
-.l-container.l-fullwidth {
-    width: 1080px;
-}
-}@media (max-width:1079px) {
-    .l-container {
-    width: 920px;
-    padding: 0 20px;
-}
-.l-container.l-fullwidth {
-    width: 960px;
-}
-.l-inner-fullwidth {
-    margin-left: -20px;
-    margin-right: -20px;
-}
-}@media screen and (max-width:959px) {
-    @-ms-viewport {
-    width: 768px;
-}
-}
-.l-fixed {
-    position: fixed;
-}
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
-.fixed {
-    position: fixed;
-}
-.disabled {
-    opacity: .5;
 }
