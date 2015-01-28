@@ -345,18 +345,6 @@ ol {
 .sc-media-object, .sc-media-image .sc-artwork, .sc-media-extra .sc-artwork {
     display: block;
 }
-
-.sc-pending, .sc-pending:hover, .sc-pending-dark, .sc-pending-dark:hover {
-    background-image: url(data:image/png;
-    base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAMElEQVQoU2P434CADGgALIZfGkkBdmm4AlzSUAW4pcEK8EljyqJJYygYqdLoCjBlAalbv4Hzd/xyAAAAAElFTkSuQmCC) !important;
-    background-repeat: repeat!important;
-    -webkit-animation: sc-pending .5s linear infinite;
-    animation: sc-pending .5s linear infinite;
-}
-.sc-pending-dark, .sc-pending-dark:hover {
-    background-image: url(data:image/png;
-    base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAOElEQVR4Ab3MsQkAIBQD0ZtOEG//eewUBH8qTcoXAq42zogE3oMLS2AJLIElsBWPmju+O/czE9gJBVwl8FmI5TgAAAAASUVORK5CYII=) !important;
-}
 .sc-pointer {
     cursor: pointer;
 }
@@ -371,11 +359,6 @@ ol {
     font-size: 11px;
     line-height: 11px;
 }
-.sc-promoted-icon-small.sc-promoted-icon {
-    background-image: url(data:image/png;
-    base64, iVBORw0KGgoAAAANSUhEUgAAAAwAAAALCAYAAABLcGxfAAAA2ElEQVQoFWNMXPhwKxMjoxcDEeDf///bmIhVDDIPpJYF3eBIUwEGfk5msDATI0gRA8Op+98ZTj38BhbD0CDKw8IgAsRAdQzCPMwMbCxMDE8+/GZgeAgxmglCIchJ+98wtG5/yfDt9z8GZqDx//79R0gCWRga2FkYGYpcRBkUhNkYZhx6i6IYxEHRgK74/OPvDGC3IWmD+wGrYqDCdec+Mdx98xOuBa7BS5sP7gywyVAlO659gisGMeAaNl36yHDl2Q+G268RpqGohHKYQLEHYv8FBgYhxSC1AEJdTIesMbE6AAAAAElFTkSuQmCC);
-}
-
 .sc-tag, .sc-tag: visited {
     position: relative;
     display: inline-block;
