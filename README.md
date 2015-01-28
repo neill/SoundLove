@@ -12,5 +12,6 @@ Gems being used: Soundcloud, Devise, Omniauth, Omniauth-soundcloud
 4. Run 'rake db:migrate'
 5. Run 'rails s' and you should be good to go!
 
-#### Current Problems:
-1. Soundcloud API doesn't provide and e-mail. Great. If you sign up and sign out you wont be able to sign back in due to e-mail validation problems. Fixable, but not a top priority for demoing. (Self-note: This is because I began to work with identities then scrapped it. Future fix: Add identities by UID/Provider)
+#### Current Problems/Future Additions:
+1. Soundcloud API doesn't provide access to e-mail. Great. If you sign up and sign out you wont be able to sign back in due to e-mail validation problems. Fixable, but not a top priority for demoing. (Self-note: This is because I began to work with identities then scrapped it. Future fix: Add identities by UID/Provider)
+2. It finds some really strange music. Maybe write an algorithm to find new tracks based off favorites.

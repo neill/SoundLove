@@ -15,10 +15,10 @@
             </div>
 
             <div><ul class="trackList__list sc-clearfix sc-list-nostyle">
-                <% @playlist.tracks.each do |x| %>
+                <% @playlist.tracks.reverse_each do |x| %>
                     <li class="trackList__item sc-border-light-bottom">
                         <div class="trackItem sc-type-small sc-type-light editing">
-                            <div class="trackItem__content sc-media-content"><%= x.title %><div class="trackItem__additional sc-media">Plays: <%= x.playback_count %></div></div>
+                            <div><b><%= x.title %></b><div class="trackItem__additional sc-media">by <%= x.user.username %></div></div>
                         </div>
                     </li>
                 <% end %>
