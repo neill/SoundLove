@@ -13,8 +13,14 @@
  *= require_tree .
  *= require_self
  */
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
 body {
+    font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
     background: #ff6600; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  #ff6600 0%, #ff3a00 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff6600), color-stop(100%,#ff3a00)); /* Chrome,Safari4+ */
@@ -34,7 +40,7 @@ body {
     padding: 10px;
     border: 0;
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -44,7 +50,7 @@ body {
 .player {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 0;
     padding: 0;
     border: 0;
@@ -96,4 +102,15 @@ body {
     left:0;
     background: gray;
     text-align: center;
+}
+
+.poweredby {
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+}
+
+.login {
+    margin-left: auto;
+    margin-right: auto;
 }

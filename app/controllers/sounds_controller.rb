@@ -5,7 +5,7 @@ class SoundsController < ApplicationController
         @user = current_user
         @client = Soundcloud.new(access_token: current_user.token)
         @tracks = @client.get('/tracks', genres: @genres)
-
+        @playlist = @client.get('/me/playlists/soundloved-tracks')
     end
 
     def index
@@ -30,7 +30,6 @@ class SoundsController < ApplicationController
 
     def post_playlist
         variables
-        @playlist = @client.get('/me/playlists/soundloved-tracks')
         @tracklist = []
         @playlist.tracks.each do |x|
             @tracklist << x.id
