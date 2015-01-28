@@ -128,6 +128,10 @@ table {
     border-spacing: 0;
 }
 
+.padding {
+    padding-bottom: 5px;
+}
+
 .sc-background-orange {
     background-color: #f50;
     background-image: linear-gradient(to bottom, #f70 0%, #f30 100%);

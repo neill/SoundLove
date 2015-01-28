@@ -22,6 +22,9 @@ html {
 body {
     font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
 }
+.container{
+    overflow: hidden;
+}
 
 .wrap{
     text-align: center;
@@ -106,9 +109,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.toplogo {
-    position: fixed;
-    top: 0;
-    z-index: 0;
-    width: 100%;
+
+.center{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
