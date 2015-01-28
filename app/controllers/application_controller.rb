@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     def variables
         @user = current_user
         @client = Soundcloud.new(access_token: current_user.token)
-        @tracks = @client.get('/tracks', genres: @genres)
+        @tracks = @client.get('/tracks')
         @playlist = @client.get('/me/playlists/soundloved-tracks')
     end
 
@@ -20,44 +20,5 @@ class ApplicationController < ActionController::Base
         @tracklist << current_user.lastid
         @client.put(@playlist.uri, playlist: { tracks: @tracklist.map { |id| {:id => id} }  })
         redirect_to root_path
-    end
-
-    def genre_list
-        @genres = ['Alternative Rock',
-                    'Ambient',
-                    'Classical',
-                    'Country',
-                    'Dance',
-                    'Deep House',
-                    'Disco',
-                    'Drum & Bass',
-                    'Dubstep',
-                    'Electro',
-                    'Electronic',
-                    'Folk',
-                    'Hardcore Techno',
-                    'Hip Hop',
-                    'House',
-                    'Indie Rock',
-                    'Jazz',
-                    'Latin',
-                    'Metal',
-                    'Minimal Techno',
-                    'Piano',
-                    'Pop',
-                    'Progressive House',
-                    'Punk',
-                    'R&B',
-                    'Rap',
-                    'Reggae',
-                    'Rock',
-                    'Singer-Songwriter',
-                    'Soul',
-                    'Tech House',
-                    'Techno',
-                    'Trance',
-                    'Trap',
-                    'Trip Hop',
-                    'World',]
     end
 end

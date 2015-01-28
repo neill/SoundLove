@@ -325,23 +325,15 @@ ul ul, ul ol, ol ol, ol ul {
     margin-bottom: 0;
 }
 ul {
-    list-style: disc;
+    list-style: none;
 }
 ol {
     list-style: decimal;
-}
-.sc-list-nostyle {
-    list-style: none;
-    margin: 0;
-}
-.sc-list-bullet {
-    list-style: outside url(data:image/png;
-    base64, iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAL0lEQVQY02NgIBf8D2Kw+x/CcPp/KMMpEBu3Qoii/2AMZBOnEGgqYatBGJ/V9AMAio8geR9OCzIAAAAASUVORK5CYII=);
-    margin-left: 15px;
-}
+]
 .sc-media, .sc-media-content, .sc-media-body {
     overflow: hidden;
 }
+
 .sc-media-image, .sc-media-left {
     float: left;
     margin-right: 10px;
